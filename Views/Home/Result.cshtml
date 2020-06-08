@@ -1,0 +1,32 @@
+@model DojoSurveyMVC.Models.Survey
+@{
+    ViewData["Title"] = "Result";
+}
+
+<div>
+    <div class="row my-3">
+        <div class="col">
+            <h3><u>Submitted Info</u></h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <p>Name:</p>
+            <p>Dojo Location:</p>
+            <p>Favorite Language:</p>
+            <p>Comment:</p>
+        </div>
+        <div class="col">
+            <p>@Model.Name</p>
+            <p>@Model.Dojo_Location</p>
+            <p>@Model.Favorite_Language</p>
+            <p>@Model.Comment</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col"></div>
+        <div class="col">
+            <a href="/" class="btn btn-primary float-right" role="button">Go Back</a>
+        </div>
+    </div>
+</div>
